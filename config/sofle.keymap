@@ -79,20 +79,6 @@
 
 
         layer-2-tapdance:
-
-        tdl1: tdl1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDL1";
-            #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 1>;
-        };
-
-        tdl2: tdl2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDL2";
-            #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 2>;
-        };
     };
 
     keymap {
@@ -113,7 +99,7 @@
 &kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                               &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BACKSLASH
 &gresc          &kp A   &kp S     &kp D     &kp F      &kp G                               &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp DELETE       &kp SPACE  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                        &kp LGUI  &kp LALT  &kp LCTRL  &tdl1   &kp BACKSPACE    &kp ENTER  &tdl2   &kp RCTRL  &kp LALT   &kp RGUI
+                        &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp BACKSPACE    &kp ENTER  &mo 2   &kp RCTRL  &kp LALT   &kp RGUI
             >;
         };
 
