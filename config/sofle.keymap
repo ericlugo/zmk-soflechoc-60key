@@ -77,16 +77,20 @@
 
         layer-2-tapdance:
 
-        layer-2-tapdance {
+        layer_1_tapdancelayer_1_tapdance: layer-2-tapdance {
             compatible = "zmk,behavior-tap-dance";
-            label = "LAYER-2-TAPDANCE";
+            label = "LAYER_1_TAPDANCE";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 2>;
+            bindings = <&mo 1>, <&tog 1>;
         };
 
         layer-2-tapdance:
 
-        layer-2-tapdance { compatible = "zmk,behavior-tap-dance"; };
+        layer_2_tapdancelayer_2_tapdance: layer-2-tapdance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_2_TAPDANCE";
+            bindings = <&mo 2>, <&tog 2>;
+        };
     };
 
     keymap {
@@ -107,7 +111,7 @@
 &kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                                          &kp Y              &kp U      &kp I      &kp O     &kp P     &kp BACKSLASH
 &gresc          &kp A   &kp S     &kp D     &kp F      &kp G                                          &kp H              &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B              &kp DELETE       &kp SPACE  &kp N              &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                        &kp LGUI  &kp LALT  &kp LCTRL  &layer_1_tapdance  &kp BACKSPACE    &kp ENTER  &layer-2-tapdance  &kp RCTRL  &kp LALT   &kp RGUI
+                        &kp LGUI  &kp LALT  &kp LCTRL  &layer_1_tapdance  &kp BACKSPACE    &kp ENTER  &layer_2_tapdance  &kp RCTRL  &kp LALT   &kp RGUI
             >;
         };
 
