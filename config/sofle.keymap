@@ -77,18 +77,20 @@
 
         layer-2-tapdance:
 
-        layer_1_tapdancelayer_1_tapdance: layer-2-tapdance {
+
+        layer-2-tapdance:
+
+        tdl1: tdl1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_1_TAPDANCE";
+            label = "TDL1";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
         };
 
-        layer-2-tapdance:
-
-        layer_2_tapdancelayer_2_tapdance: layer-2-tapdance {
+        tdl2: tdl2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_2_TAPDANCE";
+            label = "TDL2";
+            #binding-cells = <0>;
             bindings = <&mo 2>, <&tog 2>;
         };
     };
@@ -107,11 +109,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp HOME        &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                         &kp N6             &kp N7     &kp N8     &kp N9    &kp N0    &kp EQUAL
-&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                                          &kp Y              &kp U      &kp I      &kp O     &kp P     &kp BACKSLASH
-&gresc          &kp A   &kp S     &kp D     &kp F      &kp G                                          &kp H              &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B              &kp DELETE       &kp SPACE  &kp N              &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                        &kp LGUI  &kp LALT  &kp LCTRL  &layer_1_tapdance  &kp BACKSPACE    &kp ENTER  &layer_2_tapdance  &kp RCTRL  &kp LALT   &kp RGUI
+&kp HOME        &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                              &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp EQUAL
+&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                               &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BACKSLASH
+&gresc          &kp A   &kp S     &kp D     &kp F      &kp G                               &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp DELETE       &kp SPACE  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                        &kp LGUI  &kp LALT  &kp LCTRL  &tdl1   &kp BACKSPACE    &kp ENTER  &tdl2   &kp RCTRL  &kp LALT   &kp RGUI
             >;
         };
 
