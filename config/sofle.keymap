@@ -103,11 +103,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F1  &kp F2      &kp F3          &kp F4          &kp F5           &kp F6                           &kp F7           &kp F8        &kp F9      &kp F10  &kp F11          &kp F12
-&trans  &none       &kp HOME        &kp UP_ARROW    &kp END          &kp PG_UP                        &kp KP_MULTIPLY  &kp N7        &kp N8      &kp N9   &kp KP_DIVIDE    &kp F13
-&trans  &kp H       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN                    &kp KP_PLUS      &kp N4        &kp N5      &kp N6   &kp KP_SUBTRACT  &kp CAPS
-&trans  &kp K_UNDO  &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp INS        &trans    &trans  &kp N0           &kp N1        &kp N2      &kp N3   &kp KP_NUMLOCK   &kp KP_ENTER
-                    &trans          &trans          &trans           &trans         &trans    &trans  &trans           &kp KP_COMMA  &kp KP_DOT  &none
+&kp F1  &kp F2        &kp F3          &kp F4          &kp F5           &kp F6                           &kp F7           &kp F8        &kp F9      &kp F10  &kp F11          &kp F12
+&trans  &caps_word    &kp HOME        &kp UP_ARROW    &kp END          &kp PG_UP                        &kp KP_MULTIPLY  &kp N7        &kp N8      &kp N9   &kp KP_DIVIDE    &kp F13
+&trans  &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN                    &kp KP_PLUS      &kp N4        &kp N5      &kp N6   &kp KP_SUBTRACT  &none
+&trans  &kp K_UNDO    &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp INS        &trans    &trans  &kp N0           &kp N1        &kp N2      &kp N3   &kp KP_NUMLOCK   &kp KP_ENTER
+                      &trans          &trans          &trans           &trans         &trans    &trans  &trans           &kp KP_COMMA  &kp KP_DOT  &none
             >;
         };
 
