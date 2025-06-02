@@ -58,6 +58,12 @@
             key-positions = <33 34>;
             layers = <0>;
         };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <1 0>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -83,11 +89,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp HOME        &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                      &kp N6     &kp N7     &kp N8    &kp N9    &kp N0     &kp EQUAL
-&kp TAB         &kp B   &kp L     &kp D     &kp C      &kp V                                       &kp J      &kp Y      &kp O     &kp U     &kp COMMA  &kp BACKSLASH
-&gresc          &kp N   &kp R     &kp T     &kp S      &kp G                                       &kp P      &kp H      &kp A     &kp E     &kp I      &kp FSLH
-&kp LEFT_SHIFT  &kp X   &kp Q     &kp M     &kp W      &kp Z          &kp TILDE2    &kp DEL        &kp K      &kp F      &kp SQT   &kp SEMI  &kp DOT    &kp RSHFT
-                        &kp LGUI  &kp LALT  &kp LCTRL  &layer_switch  &kp ENTER     &kp BACKSPACE  &kp SPACE  &kp RCTRL  &kp LALT  &kp RGUI
+&kp MINUS       &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                     &kp N6      &kp N7     &kp N8    &kp N9    &kp N0     &kp EQUAL
+&kp TAB         &kp B   &kp L     &kp D     &kp C      &kp V                                      &kp J       &kp Y      &kp O     &kp U     &kp COMMA  &kp BACKSLASH
+&gresc          &kp N   &kp R     &kp T     &kp S      &kp G                                      &kp P       &kp H      &kp A     &kp E     &kp I      &kp FSLH
+&kp LEFT_SHIFT  &kp X   &kp Q     &kp M     &kp W      &kp Z      &layer_switch    &layer_switch  &kp K       &kp F      &kp SQT   &kp SEMI  &kp DOT    &kp RSHFT
+                        &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &kp ENTER        &kp BACKSPACE  &kp DELETE  &kp RCTRL  &kp LALT  &kp RGUI
             >;
         };
 
