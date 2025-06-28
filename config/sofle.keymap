@@ -110,22 +110,22 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                         &kp F7       &kp F8          &kp F9        &kp F10    &kp F11  &kp F12
-&trans      &none   &none   &none   &none   &none                          &kp HOME     &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &none    &none
-&kp ESCAPE  &none   &none   &none   &none   &none                          &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none    &none
-&trans      &none   &none   &none   &none   &key_repeat  &trans    &trans  &key_repeat  &kp ENTER       &none         &none      &none    &none
-                    &trans  &trans  &trans  &trans       &trans    &trans  &trans       &none           &none         &none
+&kp F1      &kp F2      &kp F3  &kp F4  &kp F5  &kp F6                         &kp F7       &kp F8          &kp F9        &kp F10    &kp F11  &kp F12
+&trans      &caps_word  &none   &none   &none   &none                          &kp HOME     &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &none    &none
+&kp ESCAPE  &kp CAPS    &none   &none   &none   &none                          &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none    &none
+&trans      &none       &none   &none   &none   &key_repeat  &trans    &trans  &key_repeat  &kp ENTER       &none         &none      &none    &none
+                        &trans  &trans  &trans  &trans       &trans    &trans  &trans       &none           &none         &none
             >;
         };
 
         numpad {
             display-name = "NUM";
             bindings = <
-&kp F1  &kp F2        &kp F3  &kp F4  &kp F5  &kp F6                    &kp F7           &kp F8        &kp F9      &kp F10  &kp F11          &kp F12
-&trans  &caps_word    &none   &none   &none   &none                     &kp KP_MULTIPLY  &kp N7        &kp N8      &kp N9   &kp KP_DIVIDE    &kp INS
-&none   &kp CAPSLOCK  &none   &none   &none   &none                     &kp KP_PLUS      &kp N4        &kp N5      &kp N6   &kp KP_SUBTRACT  &kp KP_NUM
-&trans  &none         &none   &none   &none   &none   &trans    &trans  &kp N0           &kp N1        &kp N2      &kp N3   &none            &kp KP_ENTER
-                      &none   &none   &none   &trans  &trans    &trans  &trans           &kp KP_COMMA  &kp KP_DOT  &none
+&kp F1   &kp F2        &kp F3  &kp F4  &kp F5  &kp F6                         &kp F7           &kp F8        &kp F9      &kp F10  &kp F11          &kp F12
+&trans   &caps_word    &none   &none   &none   &none                          &kp KP_MULTIPLY  &kp N7        &kp N8      &kp N9   &kp KP_DIVIDE    &kp INS
+&kp ESC  &kp CAPSLOCK  &none   &none   &none   &none                          &kp KP_PLUS      &kp N4        &kp N5      &kp N6   &kp KP_SUBTRACT  &kp KP_NUM
+&trans   &none         &none   &none   &none   &key_repeat  &trans    &trans  &kp N0           &kp N1        &kp N2      &kp N3   &none            &kp KP_ENTER
+                       &trans  &trans  &trans  &trans       &trans    &trans  &trans           &kp KP_COMMA  &kp KP_DOT  &none
             >;
         };
 
